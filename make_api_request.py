@@ -4,6 +4,7 @@ from config import API_KEY
 def make_api_request(city_name = "Hartford"):
     resp = requests.get(f'http://api.openweathermap.org/data/2.5/weather?q={city_name}&units=fahrenheit&appid={API_KEY}')
     #print(resp.json())
+    print(resp.json())
     return resp.json()
 
 def parse_json(resp_json):
@@ -11,6 +12,8 @@ def parse_json(resp_json):
         print(f"You searched up {resp_json['name']}")
         #print(resp_json['main']['temp'])
         print(f"The Current Temperature is {k_to_f(resp_json['main']['temp'])} F")
+        print(f"The Current Weather is {(resp_json['weather'][0]['description'])}")
+        return [k_to_f(resp_json['main']['temp']), (resp_json['weather'][0]['description'])]
     else:
         print("Invalid city, please try again!")
 
