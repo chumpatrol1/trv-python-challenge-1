@@ -2,11 +2,10 @@
 
 ## How to Run
 1. Clone repo onto local workspace and navigate to that directory
-1. Run 'make_api_request.py` to run program
+1. Run `make_api_request.py` to run program (Note: To run test cases, run `test.py` in same directory)
 1. Type in city to get weather
 1. Repeat step 3 or type `exit` to leave program
-Note: To run test cases, run `test.py` in same directory as step 2
-
+   
 ## Test Driven Development
 1. create test.py file for testing code
 1. create weather.py file for fetching weather
