@@ -15,5 +15,4 @@ Contributors:
 - Akul Shah
 - Holden Cowger
 - Sumbul Vohra
-- Stephen McNally
 - Timothy Kwan
